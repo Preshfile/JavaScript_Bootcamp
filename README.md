@@ -1,6 +1,6 @@
 <img src="https://user-images.githubusercontent.com/79994012/206859453-8e2ed5ac-f540-44a5-866d-66d16f54b675.jpg">
 
-<h1>Software Enginering School (Full Stack Development Program)</h1>
+<h1>Software Engineering School (Full Stack Development Program)</h1>
 <h1>Part One:</h1>
 <h2>Bootcamp JS (HTML/CSS, Javascript)</h2>
 
