@@ -1,0 +1,21 @@
+<!--Complete an index.html file with the missing javascript code in order to move the "div" with the id my_box to the coordinate of: bottom: 0and right 0
+
+	You cannot change the value of the html, moving the box needs to be done using javascript.-->
+
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+
+			<title>Document</title>
+		</head>
+		<body>
+			<div id="my_box" style= "background-color: red; position: absolute; right: 70; bottom: 70; min-width: 100px; min-height: 100px"></div>
+			<script type="text/javascript">
+				var change_position = document.getElementById("my_box").style;
+				change_position.position = "absolute";
+				change_position.bottom = "0px";
+				change_position.right = "0px";
+				// </script>
+		</body>
+	</html>
