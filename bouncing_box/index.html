@@ -1,0 +1,66 @@
+
+<!--This is a bouncing box project that Replicates the famous bouncing ball screen saver.
+The "div" is to be moved diagonally with (0, 0) coordinate (x, y) at the very top left of your screen.
+The box must move diagonally and each time it reaches a border it will change direction of the border it touched.
+If the box is moving bottom-right:
+-- when it reaches the bottom border it will go top.
+-- when it reaches the right border it will go left.-->
+
+<html>
+ <body style="background-color: black">
+    <div
+      id="my_bouncing_box"
+      style="
+        background-color: blue;
+        border-radius: 3px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        min-width: 100px;
+        min-height: 100px;
+        text-align: center;
+        font-weight: bold;
+        color: #999;
+      "
+    >
+      Oranye_precious
+    </div>
+    <script type="text/javascript">
+     
+      var box = document.getElementById("my_bouncing_box");
+
+      box.width = window.innerWidth;
+      box.height = window.innerHeight;
+
+      var x = 0;
+      var y = 0;
+
+      var speedX = 11;
+      var speedY = 11;
+
+      setInterval(function () {
+        x = x + speedX;
+        y = y + speedY;
+
+        box.style.left = x + "px";
+        box.style.top = y + "PX";
+
+        if (x + 50 <= innerWidth) {
+          speedX = -speedX;
+        }
+
+        if (x > 0) {
+          speedX = -speedX;
+        }
+
+        if (y + 50 <= innerHeight) {
+          speedY = -speedY;
+        }
+
+        if (y > 0) {
+          speedY = -speedY;
+        }
+      }, 50);
+    </script>
+  </body>
+</html>

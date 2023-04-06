@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+      margin: 0px !important;
+    }
+
+    /* the above gets rid of margin the browser creates inside the body tag */
+
+    #container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #head {
+      background-color: #00b7eb;
+    }
+    #hero {
+      background-color: #ff0000;
+    }
+    #content {
+      background-color: #00ff00;
+    }
+    #sidebar {
+      background-color: #800080;
+    }
+    #footer {
+      background-color: #444444;
+    }
+
+    #head,
+    #hero,
+    #content,
+    #sidebar,
+    #footer {
+      padding: 40px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 500px) {
+    #head,
+    #hero,
+    #content,
+    #sidebar,
+    #footer {
+      width: 100%;
+    }
+
+    }
+    @media screen and (min-width: 640px) {
+       
+        #head,
+        #hero,
+        #footer {
+      width: 100%;
+    }
+        
+        #content,
+        #sidebar{
+      width: 50%;
+      
+    }
+      #wrap_container {
+          width: 100%;
+        display: flex;
+        flex-wrap:wrap;
+
+      }
+      
+    }
